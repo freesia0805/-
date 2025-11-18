@@ -2,7 +2,7 @@ import os
 import numpy as np
 import h5py
 
-# ① 파일 경로 (본인 경로에 맞게 수정)
+# ① 파일 경로 
 path = r'C:\Users\김도현\Documents\MATLAB\cap\mat_dataset\ofdm_power_dataset.mat'
 
 # ② 출력 폴더
@@ -362,3 +362,4 @@ pr  = precision_score(y_true, y_pred, zero_division=0)
 rc  = recall_score(y_true, y_pred, zero_division=0)
 print(f"[TEST] thr={best_t:.2f} | F1={f1:.4f}  P={pr:.4f}  R={rc:.4f}  PR-AUC={pr_auc:.4f}  ROC-AUC={roc_auc:.4f}")
 print("Saved figures to:", figdir)
+
